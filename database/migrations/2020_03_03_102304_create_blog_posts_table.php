@@ -28,7 +28,7 @@ class CreateBlogPostsTable extends Migration
             $table->text('content_html');
 
             $table->boolean('is_published')->default(false);
-            $table->timestamp('published_at')->nullable();
+            $table->timestamp('published_at')->nullable(); //Когда стало опубликованным
 
 
             $table->timestamps();
